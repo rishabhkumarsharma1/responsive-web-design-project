@@ -1,0 +1,269 @@
+*{
+   margin:0;
+   padding:0
+
+}
+:root{
+      --navbar-height:59px;
+}
+    
+   /* body{
+              min-height: 100vh; /*vh stands for viewport height. which is viewable screen's height*/
+           /*   width: 100%;*/
+             /* background-image: linear-gradient(rgba (4,9,30 ,0.7),
+               rgba (4,9,30,0.7)), url ("bgimg.jpg")
+              background-position: center;
+              background-size:cover;
+              position: relative;
+              background-color: aquamarine;
+    }
+
+    nav{
+          display: flex;
+          padding:2% 4% ;
+          justify-content: space-between;
+          align-items: center;
+    }
+
+    nav img{
+      width: 85px;
+      margin-top: 0px;
+      margin-left: 0.5px;
+    }
+
+    .nav-links{
+      flex: 1;
+      text-align: right;
+
+    }
+    .nav-links ul li{
+              list-style: none;
+             display: inline-block;
+             padding: 8px 12px;
+
+    }
+    .nav-links ul li a{
+              color: #fff;
+              text-decoration: none;
+              font-size: 13px;
+              
+    }*/
+    #navbar{
+              display: flex;
+    }
+    #logo{
+      margin: 2px 2px;
+    }
+    #logo img{
+      height: 40px;
+      width: 48px;
+      margin: 13px;
+    }
+
+    #navbar{
+      display: flex;
+      position:relative ;
+                          /*inline:-Displays an element as an inline element (like <span>). Any height and width properties will have no effect*/
+                        /*  block:- Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width*/
+                      /*flex	:-Displays an element as a block-level flex container*/        
+    }              
+      #navbar ul{
+              display: flex;
+              font-family: 'Mooli', sans-serif;
+    }
+     #navbar:before{
+                  content: "";
+                  background-color: black;
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  z-index: -1;
+                  opacity: 0.4;
+/*static:- 	Default value. Elements render in order, as they appear in the document flow*/
+  /*absolute:-	The element is positioned relative to its first positioned (not static) ancestor element*/
+     /*fixed	:- The element is positioned relative to the browser window*/
+    /*relative	:-The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position*/
+    /*sticky:-	The element is positioned based on the user's scroll position
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+Note: Not supported in IE/Edge 15 or earlier. Supported in Safari from version 6.1 with a -webkit- prefix.*/
+
+    }
+
+    
+       #navbar ul li{
+              color: white;
+              list-style: none;
+              font-size: 1.1rem; /*rem:- it is a relative unit , which means all values that ue it change when the root's font-size changes */
+
+    }
+       #navbar ul li a{
+      list-style: none;
+      font-size: 1;
+      display: block;
+      padding: 3px 22px ;
+      border-radius: 20px;
+      text-decoration: none;
+      color: white;
+    }
+       #navbar ul li a:hover{
+      color: black;
+      background-color: white;
+    }
+       
+
+      #home{
+             display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            
+    }
+      #home::before{
+                 content: "";
+                  background: url( "img1.avif") no-repeat center center/cover;
+                  position: absolute;
+                  height: 300%;
+                  width: 100%;
+                  z-index: -1;
+                  opacity: 0.8;
+
+    }            
+             #home h1{
+                          color: white;
+                          text-align: center;
+
+
+    } 
+             
+             #home p{
+                        font-size: 1.1rem;
+                        color: white;
+                        font-family: 'Mooli', sans-serif;
+
+
+    }
+      
+           .h1-primary{
+                font-size: 3.8rem;
+                padding: 12px;
+
+    }
+           .btn{
+                 padding: 6px 20px;
+                 border:2px solid white;
+                 color: white;
+                 background-color: black;
+                 border-radius: 12px;
+                 cursor: pointer;
+                   
+
+    }
+           .btn:hover{
+            
+            background-color: blue;
+     }
+
+           .primary{
+                      font-size: 1.9rem;
+                      padding: 8px;
+                      text-align: center;
+
+     }
+           
+
+           .h-secondary{
+
+                        font: size 1.3em;
+                        padding: 2px;
+
+      }
+           #services{
+                      margin: 200px;
+                      display: flex;
+      }
+
+          .services-container{
+               margin: 4px;
+               display: flex;
+    }
+          #services .box{
+                     border: 3px solid black;
+                     padding: 7px;
+                     margin: 1px 3px ;
+                     border-radius: 18px;
+                     background: wheat;
+
+
+          }
+          #services .box img{
+               height: 160px;
+               display: block;
+               
+          }
+          
+          #services{
+
+          }
+          #services{
+
+          }
+          #services{
+
+          }
+           
+          .btn1 {
+                  color: black;
+                  border: 2px solid black;
+                  border-radius: 12px;
+                  background-color: skyblue;
+                  padding: 10px;
+                  cursor:pointer;
+
+          }           
+          .btn2 {
+                   color: black;
+                   border: 2px solid black;
+                   border-radius: 12px;
+                   background-color: skyblue;
+                   padding: 10px;
+                   cursor:pointer;
+
+          }           
+          .btn3{
+                   color: black;
+                   border: 2px solid black;
+                   border-radius: 12px;
+                   background-color: skyblue;
+                   padding: 10px;
+                   cursor:pointer;
+
+          }           
+          .btn4 {
+                   color: black;
+                   border: 2px solid black;
+                   border-radius: 12px;
+                   background-color: skyblue;
+                   padding: 10px;
+                   cursor:pointer;
+                   
+
+          }           
+          
+           .btn1:hover{
+                        color:red;
+           }
+           .btn2:hover{
+                       color:red;
+           }
+           .btn3:hover{
+                       color:red;
+           }
+           .btn4:hover{
+                        color:red;
+           }
+              
+           
+           
+
